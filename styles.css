@@ -211,6 +211,7 @@ h1, h2, h3, h4 {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
   color: var(--snow-dim);
 }
+.hero-sub strong { color: var(--snow); font-weight: 700; }
 
 /* Price manifesto ------------------------------------------------ */
 .price-card {
