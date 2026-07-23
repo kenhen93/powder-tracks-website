@@ -157,8 +157,12 @@ h1, h2, h3, h4 {
 .header-nav .link:hover { color: var(--snow); }
 .header-cta { margin-left: .4rem; }
 @media (max-width: 720px) {
-  .header-nav .link { display: none; }
-  .header-nav { gap: 0; }
+  /* No hamburger, no JS: let the header wrap so every link stays
+     visible and keyboard-focusable, just smaller and tighter. */
+  .site-header .wrap { flex-wrap: wrap; height: auto; padding-block: .55rem; row-gap: .4rem; }
+  .header-nav { margin-left: auto; gap: .35rem 1.05rem; flex-wrap: wrap; justify-content: flex-end; }
+  .header-nav .link { font-size: .9rem; }
+  .header-cta { margin-left: .25rem; padding: .55rem 1rem; font-size: .9rem; }
 }
 
 /* Section rhythm ------------------------------------------------- */
@@ -348,6 +352,7 @@ h1, h2, h3, h4 {
   min-width: 200px;
 }
 .playbadge:hover { color: var(--snow); border-color: var(--line-strong); }
+.playbadge[role="img"] { cursor: default; }   /* placeholder badge — not a link yet */
 .playbadge svg { width: 26px; height: 26px; flex: none; }
 .playbadge .lines { display: flex; flex-direction: column; line-height: 1.15; }
 .playbadge .small { font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--snow-dim); }
