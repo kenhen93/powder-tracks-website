@@ -56,6 +56,7 @@ images/screens/heart-rate.png
 images/screens/pass-value.png
 images/screens/cloud-backup.png
 images/screens/strava.png
+images/screens/skiz-import.png
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.

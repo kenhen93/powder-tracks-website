@@ -5,4 +5,4 @@ Referenced by index.html (free story):
 
 Referenced by premium.html (premium features):
   run-score.png  wear-os.png  heart-rate.png
-  pass-value.png  cloud-backup.png  strava.png
+  pass-value.png  cloud-backup.png  strava.png  skiz-import.png
