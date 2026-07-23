@@ -1,5 +1,8 @@
 .idea/
 powder-tracks-website.iml
 
+# Wrangler local cache (holds local account state — never commit)
+.wrangler/
+
 # Mockup / reference images — never deploy these
 images/examples/
