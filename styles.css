@@ -275,20 +275,21 @@ h1, h2, h3, h4 {
   to   { opacity: 1; transform: none; }
 }
 
-/* 2) Trail fades in, orange marker rides up it to the summit */
+/* 2) Trail fades in, orange marker rides DOWN it to the base */
 .trail { animation: trail-fade .7s ease both; }
 @keyframes trail-fade { from { opacity: 0; } to { opacity: 1; } }
 
-.rider { display: none; }               /* fallback: static summit triangle shows */
+/* Fallback: with no offset-path support the single triangle rests statically at
+   the base, placed by its transform="translate(120 560)" attribute in markup. */
 @supports (offset-path: path("M0 0")) {
   .rider {
-    display: block;
+    transform: none;                 /* motion path handles positioning instead */
     offset-path: path("M120 560 C 320 470 380 360 520 330 S 760 250 900 150");
     offset-rotate: 0deg;
-    offset-distance: 0%;
-    animation: rider-climb 2.2s cubic-bezier(.45,.05,.15,1) .35s forwards;
+    offset-distance: 100%;           /* start at the summit end of the trail */
+    animation: rider-descend 2.2s cubic-bezier(.45,.05,.15,1) .35s forwards;
   }
-  @keyframes rider-climb { to { offset-distance: 100%; } }
+  @keyframes rider-descend { to { offset-distance: 0%; } }   /* ride down to base */
 }
 
 /* 3) Light, looping snow — decorative, below the text */
@@ -331,11 +332,11 @@ h1, h2, h3, h4 {
 .snow i:nth-child(13) { left:  8%; width: 4px; height: 4px; --dx:  14px; --op: .38; animation-duration: 14s;   animation-delay: -11s; }
 .snow i:nth-child(14) { left: 96%; width: 5px; height: 5px; --dx: -18px; --op: .45; animation-duration: 11s;   animation-delay:  -6s; }
 
-/* Respect reduced motion — no intro motion, no snow, static summit */
+/* Respect reduced motion — no intro motion, no snow, marker static at base */
 @media (prefers-reduced-motion: reduce) {
   .hero .wrap > * { animation: none; opacity: 1; transform: none; }
   .trail { animation: none; opacity: 1; }
-  .rider { display: none; }
+  .rider { animation: none; offset-distance: 0%; }
   .snow { display: none; }
 }
 
