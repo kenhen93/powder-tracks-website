@@ -27,8 +27,17 @@ repo (`powder-tracks`) — never assume app code is present here.
   `.callout` at the bottom of index.html's #whats-included and in
   pricing.html's "Your data, your rules" section.)
 - **Free forever:** live GPS tracking, full session/run history and
-  stats, GPX + Ski Tracks (.skiz) import, and GPX export. (No .skiz
-  export exists; batch import and full-fidelity GPX export are premium.)
+  stats, automatic offline resort detection, day details (rating,
+  conditions, notes & photos), GPX + Ski Tracks (.skiz) import, and GPX
+  export. (No .skiz export exists; batch import and full-fidelity GPX
+  export are premium.)
+- **Day details (free, on-device):** the resort is auto-detected
+  **offline from 4,184 resorts worldwide** (no signal needed); the user
+  can rate the day **1–5 snowflakes**, log **weather, wind & snow
+  conditions**, and add **notes & photos**. Photos are stored as
+  **optimized copies with all hidden metadata (including GPS) stripped —
+  the originals in the camera roll stay untouched**. Screenshot slot:
+  `images/screens/day-details.png`.
 - **Premium ($19.99 once):** cloud backup (1 GB, backs up runs **and
   ski-day photos**) + restore on a new phone, run scores / Top Runs /
   Records / season recaps (a written recap of the day sized up against the

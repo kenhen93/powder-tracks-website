@@ -43,6 +43,7 @@ Home (`index.html`) — the free story:
 ```
 images/screens/live-tracking.png
 images/screens/history.png
+images/screens/day-details.png
 images/screens/import-export.png
 ```
 
