@@ -13,7 +13,8 @@ to `main`.
 
 | File           | Purpose                                                            |
 | -------------- | ----------------------------------------------------------------- |
-| `index.html`   | Landing page — hero, features, free vs premium, download          |
+| `index.html`   | Landing page — hero, the free story, free vs premium, download    |
+| `premium.html` | Every premium feature, all inside the one-time $19.99             |
 | `pricing.html` | One-time purchase explained + the data-freedom promise            |
 | `privacy.html` | Real privacy policy, accurate to the app architecture             |
 | `terms.html`   | One-time license, refunds, no-warranty terms                      |
@@ -35,13 +36,25 @@ preview URLs, and on the custom domain alike.
 
 ## Screenshots
 
-The feature sections reference real app captures (Pixel, ~1179×2556):
+The feature sections reference real app captures (Pixel, ~1179×2556).
+
+Home (`index.html`) — the free story:
 
 ```
 images/screens/live-tracking.png
 images/screens/history.png
 images/screens/import-export.png
+```
+
+Premium (`premium.html`):
+
+```
 images/screens/run-score.png
+images/screens/wear-os.png
+images/screens/heart-rate.png
+images/screens/pass-value.png
+images/screens/cloud-backup.png
+images/screens/strava.png
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.
