@@ -43,7 +43,9 @@ repo (`powder-tracks`) — never assume app code is present here.
   Records / season recaps (a written recap of the day sized up against the
   season — describe neutrally, never mention AI either way), live stats on
   Wear OS watches, heart rate & calories (Health Connect), pass value
-  tracking, Strava upload, batch import.
+  tracking, Strava upload, batch import (whole .skiz history in minutes),
+  and full-fidelity "extended" GPX export (extra PowderTracks data baked
+  into the GPX — the basic GPX export stays free, don't contradict that).
 - Purchases happen **in-app via Google Play only**. The website is
   informational — no checkout, no payment forms, ever.
 - Platform: **Android (Google Play)**. An iOS/Apple Watch version is in
