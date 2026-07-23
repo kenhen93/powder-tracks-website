@@ -1,135 +1,128 @@
 # PowderTracks Website
 
-Official website for PowderTracks - the free ski tracking app.
+Marketing site for **PowderTracks** — the ski & snowboard tracking app you
+buy once and own for life. No subscription, no ads, no trackers.
 
-🌐 **Live Site**: https://powdertracks.com
+🌐 **Live:** https://powdertracks.com
 
-## 🚀 Quick Start
+Pure static HTML/CSS. No framework, no build step, no dependencies, no
+JavaScript. Deploys to Cloudflare Pages via GitHub Actions on every push
+to `main`.
 
-### Local Development
+## Pages
+
+| File           | Purpose                                                            |
+| -------------- | ----------------------------------------------------------------- |
+| `index.html`   | Landing page — hero, features, free vs premium, download          |
+| `pricing.html` | One-time purchase explained + the data-freedom promise            |
+| `privacy.html` | Real privacy policy, accurate to the app architecture             |
+| `terms.html`   | One-time license, refunds, no-warranty terms                      |
+| `styles.css`   | Shared stylesheet (dark theme, brand orange `#E07028`)            |
+| `favicon.svg`  | Inline snowflake favicon (no external request)                    |
+| `images/`      | Brand marks + app icon; `images/screens/` holds app screenshots   |
+
+## Local preview
+
+No tooling required — just open the file:
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/powdertracks-website.git
-cd powdertracks-website
-
-# Open in browser
-open index.html
-# or just double-click index.html
+open index.html      # macOS
+xdg-open index.html  # Linux
 ```
 
-That's it! No build process, no dependencies, just pure HTML/CSS/JS.
+Links are relative, so it works from the filesystem, on `*.pages.dev`
+preview URLs, and on the custom domain alike.
 
-## 📦 Deployment
+## Screenshots
 
-This site automatically deploys to Cloudflare Pages via GitHub Actions on every push to `main`.
+The feature sections reference real app captures (Pixel, ~1179×2556):
 
-### First-Time Setup
+```
+images/screens/live-tracking.png
+images/screens/history.png
+images/screens/import-export.png
+images/screens/run-score.png
+```
 
-1. **Create Cloudflare Pages Project**
-   - Login to Cloudflare Dashboard
-   - Go to Pages → Create Project
-   - Connect to your GitHub repo
-   - Project name: `powdertracks`
-   - Build settings: None needed (static site)
+Until those PNGs are added, the slots show a labelled placeholder frame.
+Drop in the real files with those exact names and they appear
+automatically — the layout already reserves the correct aspect ratio, so
+there's no layout shift.
 
-2. **Add GitHub Secrets**
-   
-   In your GitHub repo: Settings → Secrets and variables → Actions
-   
-   Add these secrets:
-   ```
-   CLOUDFLARE_API_TOKEN=your_api_token_here
-   CLOUDFLARE_ACCOUNT_ID=your_account_id_here
-   ```
-   
-   **Get API Token:**
-   - Cloudflare Dashboard → Profile → API Tokens
-   - Create Token → Use "Edit Cloudflare Workers" template
-   - Or create custom token with `Account.Cloudflare Pages: Edit` permission
-   
-   **Get Account ID:**
-   - Cloudflare Dashboard → Any domain → Right sidebar shows "Account ID"
+## Deployment
 
-3. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-   
-   GitHub Actions will automatically deploy to Cloudflare Pages!
+Every push to `main` runs `.github/workflows/deploy-website.yml`, which
+publishes the repo root to Cloudflare Pages:
 
-### Manual Deployment
+```
+wrangler pages deploy . --project-name=powdertracks --branch=main
+```
 
-You can also deploy manually using Wrangler CLI:
+### One-time setup
+
+**1. Create the Pages project** (once)
+
+- Cloudflare dashboard → **Workers & Pages → Create → Pages**.
+- Create a project named **`powdertracks`** (Direct Upload is fine — the
+  GitHub Action does the uploading; you don't need to connect the repo in
+  the dashboard).
+
+**2. Add the GitHub secrets**
+
+In the repo: **Settings → Secrets and variables → Actions → New repository
+secret**. Add both:
+
+| Secret                  | Where to find it                                                         |
+| ----------------------- | ------------------------------------------------------------------------ |
+| `CLOUDFLARE_API_TOKEN`  | Cloudflare → **My Profile → API Tokens → Create Token**. Use the **Cloudflare Pages → Edit** permission (Account scope). |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard → **Workers & Pages** → right sidebar → **Account ID**. |
+
+**3. Push to `main`**
 
 ```bash
-# Install Wrangler
+git add .
+git commit -m "Publish PowderTracks site"
+git push origin main
+```
+
+The Action deploys in ~30 seconds. You can also trigger it manually from
+the **Actions** tab (**Run workflow**).
+
+### Manual deploy (optional)
+
+```bash
 npm install -g wrangler
-
-# Login to Cloudflare
 wrangler login
-
-# Deploy
 wrangler pages deploy . --project-name=powdertracks
 ```
 
-## 📁 Project Structure
+## Custom domain — powdertracks.com
 
-```
-powdertracks-website/
-├── index.html              # Main landing page
-├── style.css               # Styles with charcoal/orange theme
-├── script.js               # JavaScript for interactivity
-├── privacy.html            # Privacy policy
-├── images/
-│   └── logo.png           # PowderTracks logo
-├── .github/
-│   └── workflows/
-│       └── deploy.yml     # GitHub Actions workflow
-└── README.md              # This file
-```
+Attach the domain in the Pages dashboard (this also manages the apex DNS,
+so **don't** add conflicting `@`/`www` records elsewhere in the zone):
 
-## 🎨 Color Scheme
+1. Cloudflare dashboard → **Workers & Pages → `powdertracks` → Custom
+   domains → Set up a custom domain**.
+2. Enter **`powdertracks.com`** and follow the prompt. If the domain is on
+   Cloudflare, the DNS records are created for you automatically.
+3. (Optional) Add **`www.powdertracks.com`** the same way if you want
+   `www` to resolve too.
+4. Wait for the domain status to show **Active** and TLS to provision
+   (usually a minute or two). Cloudflare issues the certificate.
 
-- **Charcoal**: #2C2C2C (main dark color)
-- **Orange**: #FF6B35 (accent color)
-- **White**: #FFFFFF
-- **Light Gray**: #F5F5F5
+If the domain's registrar/DNS is elsewhere, point its nameservers to
+Cloudflare (or add the `CNAME` target Pages shows you) before step 2.
 
-## ✨ Features
+## Ground rules
 
-- ❄️ Falling snow animation
-- 📱 Fully responsive design
-- 🎨 Charcoal and orange branding
-- 🚀 Auto-deploy via GitHub Actions
-- ⚡ Fast loading (no dependencies)
-
-## 🛠️ Making Changes
-
-1. Edit files locally
-2. Test by opening index.html in browser
-3. Commit and push to GitHub
-4. GitHub Actions automatically deploys to Cloudflare Pages
-5. Changes live in ~1 minute!
-
-## 📝 TODO
-
-- [ ] Add actual App Store and Google Play links when apps are ready
-- [ ] Create privacy policy content
-- [ ] Add app screenshots/demo video
-- [ ] Set up analytics (optional)
-- [ ] Add blog section for updates (optional)
-
-## 🤝 Contributing
-
-This is a personal project, but suggestions are welcome! Open an issue or submit a PR.
-
-## 📄 License
-
-© 2026 PowderTracks. All rights reserved.
+- **No subscription language, ever.** Premium is one-time — $19.99, yours
+  for life. Never write "/month", "/year", "trial", or "plan".
+- **No analytics, trackers, cookies, or ad snippets** — on the site or in
+  the app. This is permanent; don't add them.
+- Keep `privacy.html` accurate to the real architecture (see `CLAUDE.md`
+  for the source-of-truth facts).
+- Relative links only; system fonts only; images compressed.
 
 ---
 
-Built with ❤️ in Colorado 🏔️
+© 2026 PowderTracks · Built for skiers & riders 🏔️
