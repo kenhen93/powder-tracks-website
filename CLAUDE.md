@@ -29,8 +29,10 @@ repo (`powder-tracks`) — never assume app code is present here.
 - **Free forever:** live GPS tracking, full session/run history and
   stats, GPX + Ski Tracks (.skiz) import, and GPX export. (No .skiz
   export exists; batch import and full-fidelity GPX export are premium.)
-- **Premium ($19.99 once):** cloud backup (1 GB) + restore on a new
-  phone, run scores / Top Runs / Records / season recaps, live stats on
+- **Premium ($19.99 once):** cloud backup (1 GB, backs up runs **and
+  ski-day photos**) + restore on a new phone, run scores / Top Runs /
+  Records / season recaps (a written recap of the day sized up against the
+  season — describe neutrally, never mention AI either way), live stats on
   Wear OS watches, heart rate & calories (Health Connect), pass value
   tracking, Strava upload, batch import.
 - Purchases happen **in-app via Google Play only**. The website is
