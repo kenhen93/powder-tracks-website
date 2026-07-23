@@ -11,8 +11,11 @@ repo (`powder-tracks`) — never assume app code is present here.
   no subscription and never will be.** Never write "/year", "/month",
   "trial", or "plan". This is the product's core differentiator vs
   Ski Tracks and Slopes; say it plainly and often.
-- Cloud backup cap: **1 GB** (a decade of skiing ≈ 33 MB). Additional
-  storage will be sellable later — also one-time. Don't invent tiers.
+- Cloud backup cap: **1 GB** — roughly thirty years of skiing; a whole
+  decade of history ≈ 33 MB (that's a DECADE, not a season — a season is
+  only a few MB). Additional storage is sellable later at **≈ $1/GB,
+  one-time** (not built yet — "coming later"). Don't invent tiers, and
+  never a subscription.
 - The invariant still holds internally — **all local data stays free
   forever; premium gates delighters, not data; we never hold user data
   hostage** — but DO NOT print that sentence verbatim on the site. Express
