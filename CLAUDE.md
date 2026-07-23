@@ -13,9 +13,16 @@ repo (`powder-tracks`) — never assume app code is present here.
   Ski Tracks and Slopes; say it plainly and often.
 - Cloud backup cap: **1 GB** (a decade of skiing ≈ 33 MB). Additional
   storage will be sellable later — also one-time. Don't invent tiers.
-- The invariant (quote it, don't paraphrase it away): **"All local data
-  stays free forever. Premium gates delighters, not data. We never hold
-  user data hostage."**
+- The invariant still holds internally — **all local data stays free
+  forever; premium gates delighters, not data; we never hold user data
+  hostage** — but DO NOT print that sentence verbatim on the site. Express
+  it in plain words instead. And the site MUST always carry the "free
+  means local / lost phone" warning near the free-vs-premium comparison:
+  on the free app history lives only on the phone, so if the phone is lost
+  or broken the data goes with it — export a GPX copy now and then, or let
+  premium's cloud backup keep an encrypted copy safe. (Currently a
+  `.callout` at the bottom of index.html's #whats-included and in
+  pricing.html's "Your data, your rules" section.)
 - **Free forever:** live GPS tracking, full session/run history and
   stats, GPX + Ski Tracks (.skiz) import, and GPX export. (No .skiz
   export exists; batch import and full-fidelity GPX export are premium.)
