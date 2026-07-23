@@ -275,22 +275,12 @@ h1, h2, h3, h4 {
   to   { opacity: 1; transform: none; }
 }
 
-/* 2) Trail fades in, orange marker rides DOWN it to the base */
+/* 2) Trail fades in; the orange marker rides DOWN it via SVG <animateMotion>.
+   The static fallback triangle only appears under reduced motion. */
 .trail { animation: trail-fade .7s ease both; }
 @keyframes trail-fade { from { opacity: 0; } to { opacity: 1; } }
 
-/* Fallback: with no offset-path support the single triangle rests statically at
-   the base, placed by its transform="translate(120 560)" attribute in markup. */
-@supports (offset-path: path("M0 0")) {
-  .rider {
-    transform: none;                 /* motion path handles positioning instead */
-    offset-path: path("M120 560 C 320 470 380 360 520 330 S 760 250 900 150");
-    offset-rotate: 0deg;
-    offset-distance: 100%;           /* start at the summit end of the trail */
-    animation: rider-descend 2.2s cubic-bezier(.45,.05,.15,1) .35s forwards;
-  }
-  @keyframes rider-descend { to { offset-distance: 0%; } }   /* ride down to base */
-}
+.marker-static { display: none; }
 
 /* 3) Light, looping snow — decorative, below the text */
 .snow {
@@ -336,7 +326,8 @@ h1, h2, h3, h4 {
 @media (prefers-reduced-motion: reduce) {
   .hero .wrap > * { animation: none; opacity: 1; transform: none; }
   .trail { animation: none; opacity: 1; }
-  .rider { animation: none; offset-distance: 0%; }
+  #marker { display: none; }              /* hide the animated marker */
+  .marker-static { display: block; }      /* show the static one at the base */
   .snow { display: none; }
 }
 
