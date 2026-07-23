@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
   font-size: 1.05rem;
   letter-spacing: -.01em;
 }
-.price-lines .no-sub { color: var(--muted); font-weight: 600; }
+.price-lines .no-sub { color: var(--snow); font-weight: 700; }
 
 .hero-actions {
   margin-top: 2rem;
