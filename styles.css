@@ -127,9 +127,9 @@ h1, h2, h3, h4 {
 .btn-outline {
   background: transparent;
   color: var(--orange);
-  border-color: var(--orange);
+  border-color: var(--line-strong);   /* visible oval like the ghost button */
 }
-.btn-outline:hover { color: var(--orange-2); border-color: var(--orange-2); background: var(--orange-soft); transform: translateY(-1px); }
+.btn-outline:hover { color: var(--orange-2); border-color: var(--orange); background: var(--orange-soft); transform: translateY(-1px); }
 
 /* Header --------------------------------------------------------- */
 .site-header {
