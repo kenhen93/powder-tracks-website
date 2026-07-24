@@ -162,6 +162,7 @@ h1, h2, h3, h4 {
 .header-nav .link { color: var(--snow-dim); font-weight: 600; font-size: .95rem; }
 .header-nav .link:hover { color: var(--snow); }
 .header-cta { margin-left: .4rem; }
+.nav-mark { width: 30px; height: auto; margin-left: .2rem; flex: none; }
 @media (max-width: 720px) {
   /* No hamburger, no JS: let the header wrap so every link stays
      visible and keyboard-focusable, just smaller and tighter. */
