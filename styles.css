@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
   color: var(--orange);
   border-color: var(--line-strong);   /* visible oval like the ghost button */
 }
-.btn-outline:hover { color: var(--orange-2); border-color: var(--orange); background: var(--orange-soft); transform: translateY(-1px); }
+.btn-outline:hover { color: #fff; background: var(--orange); border-color: var(--orange); transform: translateY(-1px); }
 
 /* Header --------------------------------------------------------- */
 .site-header {
