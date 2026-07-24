@@ -58,7 +58,7 @@
         <ul>
           <li><strong>Your email address</strong> — handled by our authentication provider, Supabase, so you can sign in and recover your account.</li>
           <li><strong>An entitlement record</strong> — a note that your Google account purchased premium, so your unlock works across devices.</li>
-          <li><strong>An encrypted backup file</strong> — only if you enable cloud backup. It contains your run data, encrypted, and is stored in Backblaze B2 object storage under a key derived from your account ID.</li>
+          <li><strong>Your backup</strong> — only if you enable cloud backup. It contains your run data and any photos you've attached to your sessions (the optimized copies the app stores — location and other hidden metadata are already stripped from photos when you add them). It is stored encrypted at rest in Backblaze B2 object storage, private to your account, under keys derived from your account ID.</li>
         </ul>
         <p>That is the entire server-side inventory. We do not store your name, your location history, your contacts, or your device identifiers.</p>
 
