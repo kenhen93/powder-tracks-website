@@ -124,6 +124,12 @@ h1, h2, h3, h4 {
   border-color: var(--line-strong);
 }
 .btn-ghost:hover { color: var(--snow); border-color: var(--orange); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.btn-outline:hover { color: var(--orange-2); border-color: var(--orange-2); background: var(--orange-soft); transform: translateY(-1px); }
 
 /* Header --------------------------------------------------------- */
 .site-header {
