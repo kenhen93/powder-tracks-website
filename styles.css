@@ -121,7 +121,7 @@ h1, h2, h3, h4 {
 .btn-ghost {
   background: transparent;
   color: var(--snow);
-  border-color: var(--line-strong);
+  border-color: rgba(224, 112, 40, .55);   /* muted brand orange — visible at rest */
 }
 .btn-ghost:hover { color: var(--snow); border-color: var(--orange); transform: translateY(-1px); }
 .btn-outline {
