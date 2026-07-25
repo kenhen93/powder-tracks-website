@@ -64,6 +64,10 @@ Drop in the real files with those exact names and they appear
 automatically — the layout already reserves the correct aspect ratio, so
 there's no layout shift.
 
+The home page's **share-card** row (a free feature) is not a phone
+screenshot — it renders `images/social/powdertracks_share.png` as a
+free-standing rounded card.
+
 ## Deployment
 
 Every push to `main` runs `.github/workflows/deploy-website.yml`, which

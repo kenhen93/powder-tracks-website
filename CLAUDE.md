@@ -28,9 +28,14 @@ repo (`powder-tracks`) — never assume app code is present here.
   pricing.html's "Your data, your rules" section.)
 - **Free forever:** live GPS tracking, full session/run history and
   stats, automatic offline resort detection, day details (rating,
-  conditions, notes & photos), GPX + Ski Tracks (.skiz) import, and GPX
-  export. (No .skiz export exists; batch import and full-fidelity GPX
-  export are premium.)
+  conditions, notes & photos), one-tap share cards, GPX + Ski Tracks
+  (.skiz) import, and GPX export. (No .skiz export exists; batch import
+  and full-fidelity GPX export are premium.)
+- **Share card (FREE — never gate it or imply it's paid):** one tap turns
+  a ski day into a shareable image (stats, conditions, rating, notes)
+  sized for Instagram/group chats. Shown on the home page as a
+  free-standing rounded card (not a phone frame); image lives at
+  `images/social/powdertracks_share.png`.
 - **Day details (free, on-device):** the resort is auto-detected
   **offline from 4,184 resorts worldwide** (no signal needed); the user
   can rate the day **1–5 snowflakes**, log **weather, wind & snow

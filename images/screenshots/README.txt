@@ -8,3 +8,6 @@ Referenced by index.html (free story):
 Referenced by premium.html (premium features):
   run-score.png  wear-os.png  heart-rate.png
   pass-value.png  cloud-backup.png  strava.png  skiz-import.png
+
+Not a screenshot: the home "share card" row (a FREE feature) uses
+  ../social/powdertracks_share.png  (free-standing rounded card, no phone frame)

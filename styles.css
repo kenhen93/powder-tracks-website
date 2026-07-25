@@ -457,6 +457,16 @@ h1, h2, h3, h4 {
 .phone-screen .ph-label b { color: var(--snow-dim); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
 .phone-screen .ph-label span { color: var(--orange-2); }
 
+/* Free-standing share card (not a phone frame) — used by the share-card row */
+.share-card { display: grid; place-items: center; }
+.share-card img {
+  width: min(300px, 78vw);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 30px 70px -28px rgba(0, 0, 0, .9);
+  transform: rotate(-2deg);
+}
+
 /* Free vs Premium ------------------------------------------------ */
 .tiers {
   display: grid;
