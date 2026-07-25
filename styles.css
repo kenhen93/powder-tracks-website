@@ -144,7 +144,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  height: 64px;
+  height: 72px;
 }
 .brand {
   display: inline-flex;
@@ -158,6 +158,9 @@ h1, h2, h3, h4 {
 .brand:hover { color: var(--snow); }
 .brand img { width: 34px; height: auto; }
 .brand b { color: var(--orange-2); font-weight: 800; }
+/* Header brand gets more presence (footer brand stays at base size) */
+.site-header .brand { font-size: 1.3rem; }
+.site-header .brand img { width: 40px; }
 .header-nav { margin-left: auto; display: flex; align-items: center; gap: 1.6rem; }
 .header-nav .link { color: var(--snow-dim); font-weight: 600; font-size: .95rem; }
 .header-nav .link:hover { color: var(--snow); }
