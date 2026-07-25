@@ -20,7 +20,7 @@ to `main`.
 | `terms.html`   | One-time license, refunds, no-warranty terms                      |
 | `styles.css`   | Shared stylesheet (dark theme, brand orange `#E07028`)            |
 | `favicon.svg`  | Inline snowflake favicon (no external request)                    |
-| `images/`      | Brand marks + app icon; `images/screens/` holds app screenshots   |
+| `images/`      | Brand marks + app icon; `images/screenshots/` holds app screenshots   |
 
 ## Local preview
 
@@ -41,22 +41,22 @@ The feature sections reference real app captures (Pixel, ~1179×2556).
 Home (`index.html`) — the free story:
 
 ```
-images/screens/live-tracking.png
-images/screens/history.png
-images/screens/day-details.png
-images/screens/import-export.png
+images/screenshots/live-tracking.png
+images/screenshots/history.png
+images/screenshots/day-details.png
+images/screenshots/import-export.png
 ```
 
 Premium (`premium.html`):
 
 ```
-images/screens/run-score.png
-images/screens/wear-os.png
-images/screens/heart-rate.png
-images/screens/pass-value.png
-images/screens/cloud-backup.png
-images/screens/strava.png
-images/screens/skiz-import.png
+images/screenshots/run-score.png
+images/screenshots/wear-os.png
+images/screenshots/heart-rate.png
+images/screenshots/pass-value.png
+images/screenshots/cloud-backup.png
+images/screenshots/strava.png
+images/screenshots/skiz-import.png
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.
