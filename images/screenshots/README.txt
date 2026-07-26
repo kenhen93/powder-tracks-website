@@ -6,8 +6,9 @@ free/  — referenced by index.html (free story):
   import-export.png  (placeholder — free basic one-file import + GPX export)
 
 premium/  — referenced by premium.html:
-  top-runs.png (Scores/Top Runs)  pass-value.png  skiz-import.png (Ski Tracks batch import)   (present)
-  wear-os.png  heart-rate.png  cloud-backup.png  strava.png   (placeholders)
+  top-runs.png (Scores/Top Runs)  pass-value.png  skiz-import.png (Ski Tracks batch import)
+  heart-rate.png  backup-sync.png (Cloud backup)  strava-sync.png (Strava)   (present)
+  wear-os.png   (placeholder)
 
 Not a screenshot: the home "share card" row (a FREE feature) uses
   ../social/powdertracks_share.png  (free-standing rounded card, no phone frame)

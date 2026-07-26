@@ -54,10 +54,10 @@ Premium (`premium.html`) — `images/screenshots/premium/`:
 top-runs.png          ✓ present   (Scores / Top Runs slot)
 pass-value.png        ✓ present
 skiz-import.png       ✓ present   (Ski Tracks batch import — premium)
+heart-rate.png        ✓ present
+backup-sync.png       ✓ present   (Cloud backup slot)
+strava-sync.png       ✓ present   (Strava slot)
 wear-os.png           placeholder
-heart-rate.png        placeholder
-cloud-backup.png      placeholder
-strava.png            placeholder
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.
