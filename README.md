@@ -42,7 +42,7 @@ Home (`index.html`) — the free story:
 
 ```
 images/screenshots/live-tracking.png
-images/screenshots/history.png
+images/screenshots/season_history.png
 images/screenshots/day-details.png
 images/screenshots/import-export.png
 ```
@@ -50,7 +50,7 @@ images/screenshots/import-export.png
 Premium (`premium.html`):
 
 ```
-images/screenshots/run-score.png
+images/screenshots/top-runs.png
 images/screenshots/wear-os.png
 images/screenshots/heart-rate.png
 images/screenshots/pass-value.png
