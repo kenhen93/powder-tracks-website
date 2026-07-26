@@ -57,7 +57,7 @@ skiz-import.png       ✓ present   (Ski Tracks batch import — premium)
 heart-rate.png        ✓ present
 backup-sync.png       ✓ present   (Cloud backup slot)
 strava-sync.png       ✓ present   (Strava slot)
-wear-os.png           placeholder
+wear-os.png           ✓ present   (round watch face — circular, not a phone frame)
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.

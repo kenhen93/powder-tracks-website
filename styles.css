@@ -467,6 +467,19 @@ h1, h2, h3, h4 {
   transform: rotate(-2deg);
 }
 
+/* Round Wear OS watch face (not a phone frame) — circular with a bezel */
+.watch { display: grid; place-items: center; }
+.watch img {
+  width: min(210px, 58vw);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #3a3a3a, #141414);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .9);
+}
+
 /* Free vs Premium ------------------------------------------------ */
 .tiers {
   display: grid;

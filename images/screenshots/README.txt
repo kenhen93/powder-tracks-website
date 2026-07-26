@@ -8,7 +8,7 @@ free/  — referenced by index.html (free story):
 premium/  — referenced by premium.html:
   top-runs.png (Scores/Top Runs)  pass-value.png  skiz-import.png (Ski Tracks batch import)
   heart-rate.png  backup-sync.png (Cloud backup)  strava-sync.png (Strava)   (present)
-  wear-os.png   (placeholder)
+  wear-os.png   (present — square 1020x1020 round watch face; shown circular, not a phone frame)
 
 Not a screenshot: the home "share card" row (a FREE feature) uses
   ../social/powdertracks_share.png  (free-standing rounded card, no phone frame)
