@@ -36,27 +36,28 @@ preview URLs, and on the custom domain alike.
 
 ## Screenshots
 
-The feature sections reference real app captures (Pixel, ~1179×2556).
+The feature sections reference real app captures (Pixel, ~1179×2556),
+split by tier into `free/` and `premium/` subfolders.
 
-Home (`index.html`) — the free story:
-
-```
-images/screenshots/live-tracking.png
-images/screenshots/season_history.png
-images/screenshots/day-details.png
-images/screenshots/import-export.png
-```
-
-Premium (`premium.html`):
+Home (`index.html`) — `images/screenshots/free/`:
 
 ```
-images/screenshots/top-runs.png
-images/screenshots/wear-os.png
-images/screenshots/heart-rate.png
-images/screenshots/pass-value.png
-images/screenshots/cloud-backup.png
-images/screenshots/strava.png
-images/screenshots/skiz-import.png
+live-tracking.png     ✓ present
+season_history.png    ✓ present
+day-details.png       ✓ present
+import-export.png     placeholder (free basic import/export)
+```
+
+Premium (`premium.html`) — `images/screenshots/premium/`:
+
+```
+top-runs.png          ✓ present   (Scores / Top Runs slot)
+pass-value.png        ✓ present
+skiz-import.png       ✓ present   (Ski Tracks batch import — premium)
+wear-os.png           placeholder
+heart-rate.png        placeholder
+cloud-backup.png      placeholder
+strava.png            placeholder
 ```
 
 Until those PNGs are added, the slots show a labelled placeholder frame.

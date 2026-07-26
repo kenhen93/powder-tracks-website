@@ -42,7 +42,7 @@ repo (`powder-tracks`) — never assume app code is present here.
   conditions**, and add **notes & photos**. Photos are stored as
   **optimized copies with all hidden metadata (including GPS) stripped —
   the originals in the camera roll stay untouched**. Screenshot slot:
-  `images/screenshots/day-details.png`.
+  `images/screenshots/free/day-details.png`.
 - **Premium ($19.99 once):** cloud backup (1 GB, backs up runs **and
   ski-day photos**) + restore on a new phone, run scores / Top Runs /
   Records / season recaps (a written recap of the day sized up against the
@@ -67,8 +67,9 @@ repo (`powder-tracks`) — never assume app code is present here.
   transparency, `wordmark_white.png` / `wordmark_orange.png`). Keep
   `images/` root empty — everything lives in typed subfolders: brand
   marks / wordmarks / app icon in `images/brand/`, the OG / social card
-  in `images/social/`, app screenshots in `images/screenshots/` (mockups
-  in the gitignored `images/examples/`). Copy new assets into the matching
+  in `images/social/`, app screenshots in `images/screenshots/` — split
+  by tier into `free/` and `premium/` subfolders (mockups in the
+  gitignored `images/examples/`). Copy new assets into the matching
   subfolder; never hotlink, never restyle or recolor the marks.
 - Strava assets: only official brand-kit files, unmodified ("Powered by
   Strava" / "Compatible with Strava"). Never the bare Strava glyph,
