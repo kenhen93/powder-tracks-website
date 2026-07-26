@@ -2,8 +2,7 @@ Real app screenshots (PNGs, ~1179x2556), split by tier into subfolders.
 Other typed image folders: ../brand (marks/wordmarks/icon), ../social (OG + share card).
 
 free/  — referenced by index.html (free story):
-  live-tracking.png  season_history.png  day-details.png   (present)
-  import-export.png  (placeholder — free basic one-file import + GPX export)
+  live-tracking.png  season_history.png  day-details.png  single_skiz_import.png   (all present)
 
 premium/  — referenced by premium.html:
   top-runs.png (Scores/Top Runs)  pass-value.png  skiz-import.png (Ski Tracks batch import)

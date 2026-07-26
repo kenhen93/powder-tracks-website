@@ -42,10 +42,10 @@ split by tier into `free/` and `premium/` subfolders.
 Home (`index.html`) — `images/screenshots/free/`:
 
 ```
-live-tracking.png     ✓ present
-season_history.png    ✓ present
-day-details.png       ✓ present
-import-export.png     placeholder (free basic import/export)
+live-tracking.png        ✓ present
+season_history.png       ✓ present
+day-details.png          ✓ present
+single_skiz_import.png   ✓ present (free one-file import row)
 ```
 
 Premium (`premium.html`) — `images/screenshots/premium/`:
