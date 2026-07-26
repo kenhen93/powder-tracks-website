@@ -460,7 +460,7 @@ h1, h2, h3, h4 {
 /* Free-standing share card (not a phone frame) — used by the share-card row */
 .share-card { display: grid; place-items: center; }
 .share-card img {
-  width: min(300px, 78vw);
+  width: min(220px, 60vw);
   height: auto;
   border-radius: 20px;
   box-shadow: 0 30px 70px -28px rgba(0, 0, 0, .9);
