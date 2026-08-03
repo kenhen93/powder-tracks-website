@@ -61,7 +61,7 @@ repo (`powder-tracks`) — never assume app code is present here.
 
 - Dark theme to match the app: near-black surfaces (#121212–#1d1d1d),
   cards #2C2C2C-ish, light text.
-- **Brand orange is `#E07028`** (extracted from the logo master). The
+- **Brand orange is `#ED7A33`** (extracted from the logo master). The
   old `#FF6B35` in early files is wrong — replace on sight.
 - Assets come from the app repo's `assets/images/` (snowflake mark with
   transparency, `wordmark_white.png` / `wordmark_orange.png`). Keep

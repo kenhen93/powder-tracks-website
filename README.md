@@ -18,7 +18,7 @@ to `main`.
 | `pricing.html` | One-time purchase explained + the data-freedom promise            |
 | `privacy.html` | Real privacy policy, accurate to the app architecture             |
 | `terms.html`   | One-time license, refunds, no-warranty terms                      |
-| `styles.css`   | Shared stylesheet (dark theme, brand orange `#E07028`)            |
+| `styles.css`   | Shared stylesheet (dark theme, brand orange `#ED7A33`)            |
 | `favicon.svg`  | Inline snowflake favicon (no external request)                    |
 | `images/`      | Brand marks + app icon; `images/screenshots/` holds app screenshots   |
 

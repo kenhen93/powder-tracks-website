@@ -1,5 +1,5 @@
 /* PowderTracks marketing site
-   Dark theme · brand orange #E07028 · mobile-first · no external requests
+   Dark theme · brand orange #ED7A33 · mobile-first · no external requests
    ------------------------------------------------------------------ */
 
 *,
@@ -23,7 +23,7 @@
   --muted:      #8b95a3;
 
   /* Brand */
-  --orange:     #e07028;
+  --orange:     #ed7a33;
   --orange-2:   #f3893c;
   --orange-soft:rgba(224, 112, 40, .13);
 
