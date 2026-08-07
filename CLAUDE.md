@@ -29,8 +29,8 @@ repo (`powder-tracks`) — never assume app code is present here.
 - **Free forever:** live GPS tracking, full session/run history and
   stats, automatic offline resort detection, day details (rating,
   conditions, notes & photos), one-tap share cards, GPX + Ski Tracks
-  (.skiz) import, and GPX export. (No .skiz export exists; batch import
-  and full-fidelity GPX export are premium.)
+  (.skiz) + Slopes (.slopes) import, and GPX export. (No .skiz/.slopes
+  export exists; batch import and full-fidelity GPX export are premium.)
 - **Share card (FREE — never gate it or imply it's paid):** one tap turns
   a ski day into a shareable image (stats, conditions, rating, notes)
   sized for Instagram/group chats. Shown on the home page as a
@@ -48,7 +48,8 @@ repo (`powder-tracks`) — never assume app code is present here.
   Records / season recaps (a written recap of the day sized up against the
   season — describe neutrally, never mention AI either way), live stats on
   Wear OS watches, heart rate & calories (Health Connect), pass value
-  tracking, Strava upload, batch import (whole .skiz history in minutes),
+  tracking, Strava upload, batch import (whole .skiz / .slopes history in
+  minutes),
   and full-fidelity "extended" GPX export (extra PowderTracks data baked
   into the GPX — the basic GPX export stays free, don't contradict that).
 - Purchases happen **in-app via Google Play only**. The website is

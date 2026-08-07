@@ -485,12 +485,12 @@ h1, h2, h3, h4 {
    Reuses the .phone frame; each shrinks to fit rather than stacking. */
 .theme-pair {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(.75rem, 3vw, 1.75rem);
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  gap: clamp(.4rem, 1.5vw, .9rem);
   align-items: start;
-  justify-items: center;
+  justify-content: center;
 }
-.theme-pair .phone { width: 100%; max-width: 260px; }
+.theme-pair .phone { width: 100%; }
 
 /* Free vs Premium ------------------------------------------------ */
 .tiers {
