@@ -480,16 +480,17 @@ h1, h2, h3, h4 {
   box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .9);
 }
 
-/* Light / dark theme pair — two phone frames, light left, dark right;
-   stacks (light first) on narrow screens. Reuses the .phone frame. */
+/* Light / dark theme pair — two phone frames side by side (light left,
+   dark right) at every width, with a little breathing room between.
+   Reuses the .phone frame; each shrinks to fit rather than stacking. */
 .theme-pair {
   display: grid;
-  gap: clamp(1.25rem, 4vw, 2.5rem);
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(.75rem, 3vw, 1.75rem);
+  align-items: start;
   justify-items: center;
 }
-@media (min-width: 620px) {
-  .theme-pair { grid-template-columns: 1fr 1fr; align-items: start; }
-}
+.theme-pair .phone { width: 100%; max-width: 260px; }
 
 /* Free vs Premium ------------------------------------------------ */
 .tiers {
