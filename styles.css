@@ -480,6 +480,17 @@ h1, h2, h3, h4 {
   box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .9);
 }
 
+/* Light / dark theme pair — two phone frames, light left, dark right;
+   stacks (light first) on narrow screens. Reuses the .phone frame. */
+.theme-pair {
+  display: grid;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  justify-items: center;
+}
+@media (min-width: 620px) {
+  .theme-pair { grid-template-columns: 1fr 1fr; align-items: start; }
+}
+
 /* Free vs Premium ------------------------------------------------ */
 .tiers {
   display: grid;
