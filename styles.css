@@ -486,7 +486,7 @@ h1, h2, h3, h4 {
 .theme-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 240px));
-  gap: clamp(.4rem, 1.5vw, .9rem);
+  gap: clamp(2px, .6vw, 6px);
   align-items: start;
   justify-content: center;
 }
